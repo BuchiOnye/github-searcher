@@ -80,4 +80,4 @@ The code contains tests which can be found in the test folder.
 After a successful startup of the project, 
 * access swagger api documentation link with [http://localhost:8080/swagger-ui.html#](http://localhost:8080/swagger-ui.html#)
 * you can confirm startup status by accessing Health Check link: [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health)
-* Postman-collection [https://www.getpostman.com/collections/8442bc09427460d116c9](https://www.getpostman.com/collections/8442bc09427460d116c9)
+* Postman-collection [https://www.getpostman.com/collections/7f99f6644b82c2692a95](https://www.getpostman.com/collections/7f99f6644b82c2692a95)

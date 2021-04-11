@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: #f8f8f8;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    height: 56px;
+    border-radius: 8px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0.4000000059604645px solid #055cc13b !important;
+}
+
+.fa-search {
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    color: #28536b;
+}
+
+.card {
+    border: 0.4000000059604645px solid #055cc13b !important;
+    border-radius: 8px !important;
+}
+
+.card-with__boxshadow {
+    box-shadow: 0px 8px 70px #0000000d !important;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+table,
+th,
+td {
+    border-bottom: 0.5px solid #055cc13b !important;
+    border-collapse: collapse;
+    background-color: inherit !important;
+}
+
+td {
+    color: #656565;
+}
+
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex-parent {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.long-and-truncated-with-child-corrected {
+    flex: 1;
+    min-width: 0; /* or some value */
+}
+.long-and-truncated-with-child-corrected > h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.long-and-truncated-with-child {
+    flex: 1;
+}
+
+.long-and-truncated-with-child > h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.long-and-truncated {
+    flex: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: #29536b;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  .chart-container {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:focus {
+      background-color: #29536b !important;
+      color: #fff;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+  }

@@ -12,14 +12,14 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Contributor {
+	@JsonProperty("avatar_url")
+	private String avartarUrl;
+	
 	private String login;
 	
 	private Integer contributions;
 	
 	private String type;
-	
-	@JsonProperty("avatar_url")
-	private String avartarUrl;
 	
 	@JsonProperty("site_admin")
 	private Boolean siteAdmin;

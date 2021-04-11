@@ -34,7 +34,7 @@
 
     <div class="container">
         <!-- search section -->
-        <div class="row mt-4 pt-2">
+        <div class="row mt-4 pt-2" id="search_div" name="search_div">
             <div class="col-md-7 mx-auto">
                 <form onsubmit="onSearch(event)">
                     <div class="row text-center mx-auto">
@@ -126,18 +126,6 @@
                         </div>
                     </div> -->
 
-                    <div class="col-md-12 d-flex justify-content-end mt-4">
-                        <div class="pagination">
-                            <a href="#">&laquo;</a>
-                            <a class="active" href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#">&raquo;</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -147,20 +135,26 @@
         <div id="analytics" class="row mt-4 pt-2 d-none">
             <div class="col-md-9 mx-auto">
                 <div class="card result-card card-with__boxshadow p-4">
-                    <h5>Seamfix Autotopup</h5>
+<div class="row mt-4 pt-2" id="repo_div" name="repo_div">
+            <div class="col-md-7 mx-auto">
+                    <div class="row text-center mx-auto">
+                        <div class="col-md-8">
+                            <div class="position-relative w-100">
+                    <h5 id="repo_name"></h5>
+                            </div>
+                        </div>
 
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary px-5" style="height: 31px;" onclick="goToRepositories();">Go Back to Repositories</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
                     <h6 class="mt-3 pt-2 mb-3" style="color: #757575">Contributors</h6>
 
                     <table>
-                        <tr>
-                            <th>S/N</th>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Date of commit</th>
-                            <th>commit count</th>
-                        </tr>
-                        <tr>
+                        
+                       <!-- <tr>
                             <td>1</td>
                             <td>
                                 <div style="width: 60px; height: 60px;"
@@ -198,26 +192,18 @@
                             <td>flow.buchi@yopail.com</td>
                             <td>11/21/1221</td>
                             <td>102</td>
-                        </tr>
+                        </tr> -->
                     </table>
 
-                    <div class="col-md-12 d-flex justify-content-end mt-4">
-                        <div class="pagination">
-                            <a href="#">&laquo;</a>
-                            <a class="active" href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#">&raquo;</a>
-                        </div>
-                    </div>
 
                     <!-- chart section -->
                     <div class="chart-container mt-5">
                         <h5>Commit Impact</h5>
                         <canvas id="commitImpact"></canvas>
+                    </div>
+                    <div class="chart-container mt-5">
+                        <h5>Commit Projection</h5>
+                        <canvas id="commitProjection"></canvas>
                     </div>
                     <!-- chart section -->
                 </div>
@@ -238,10 +224,7 @@
     <script src="js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="/index.js"></script>
-
-
-
-
+       
 </body>
 
 </html>

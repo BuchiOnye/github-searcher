@@ -1,10 +1,10 @@
 package com.buchi.github.seacher.advice;
 
-import com.buchi.github.searcher.exception.BadRequestException;
-import com.buchi.github.searcher.exception.DuplicateResultException;
-import com.buchi.github.searcher.exception.InvalidCredentialsException;
-import com.buchi.github.searcher.exception.NotFoundException;
-import com.buchi.github.searcher.model.Response;
+import com.buchi.github.seacher.exception.BadRequestException;
+import com.buchi.github.seacher.exception.DuplicateResultException;
+import com.buchi.github.seacher.exception.InvalidCredentialsException;
+import com.buchi.github.seacher.exception.NotFoundException;
+import com.buchi.github.seacher.model.Response;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
@@ -75,7 +75,7 @@ public class ApiAdvice {
 	@ResponseBody
 	public Response<?> handleBadRequestException(BadRequestException e) {
 		Response<?> response = new Response<>();
-		response.setCode(HttpStatus.BAD_REQUEST.toString());
+		response.setCode("400");
 		response.setMessage(e.getMessage());
 		return response;
 	}
@@ -95,7 +95,7 @@ public class ApiAdvice {
 	@ResponseBody
 	public Response<?> handleIllegalArgumentException(IllegalArgumentException exception) {
 		Response<?> response = new Response<>();
-		response.setCode(HttpStatus.BAD_REQUEST.toString());
+		response.setCode("400");
 		response.setMessage(exception.getMessage());
 		return response;
 	}

@@ -14,8 +14,6 @@ Documentation for the API can be found using the URL below after starting the se
 
 `http://localhost:8080/swagger-ui.html#`
 
-[![URL-Shortener-API.png](https://i.postimg.cc/RhdzXNgQ/URL-Shortener-API.png)](https://postimg.cc/sGM82Ddv)
-
 ## Technologies
 Project is created with:
 * Java programming language

@@ -73,11 +73,9 @@ NOTE: All apis are completely free services which do not require authentication,
 -
 The code contains tests which can be found in the test folder.
 
-[![shortened-url.png](https://i.postimg.cc/QtLKcxYd/shortened-url.png)](https://postimg.cc/B8gv0sGr)
+[![github-searcher.png](https://i.postimg.cc/ZRd4BjKQ/github-searcher.png)](https://postimg.cc/XG4Ttf5K)
 
-[![AAA.png](https://i.postimg.cc/MHqcr3Sk/AAA.png)](https://postimg.cc/34fJkBN9)
-
-[![BBBB.png](https://i.postimg.cc/L6yqNVQ7/BBBB.png)](https://postimg.cc/QHTxMc3k)
+[![default-page.png](https://i.postimg.cc/Dw8Dw0zj/default-page.png)](https://postimg.cc/68xzH9nn)
 
 
 ## Launch
